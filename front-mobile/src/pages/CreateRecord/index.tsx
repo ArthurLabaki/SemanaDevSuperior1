@@ -68,7 +68,8 @@ const CreateRecord = () => {
             <Header />
             <View style={styles.container}>
                 <TextInput style={styles.inputText} placeholder="Nome" placeholderTextColor="#9E9E9E" onChangeText={text => setName(text)} value={name} />
-                <TextInput keyboardType='numeric' maxLength={3} style={styles.inputText} placeholder="Idade" placeholderTextColor="#9E9E9E" onChangeText={text => setAge(text)} value={age} />
+                <TextInput keyboardType='numeric' maxLength={3} style={styles.inputText} placeholder="Idade" placeholderTextColor="#9E9E9E"
+                    onChangeText={text => setAge(text)} value={age} />
                 <View style={styles.platformContainer}>
                     <PlatformCard platform="PC" icon="laptop" onChange={handleChangePlatform} activePlatform={platform} />
                     <PlatformCard platform="XBOX" icon="xbox" onChange={handleChangePlatform} activePlatform={platform} />
